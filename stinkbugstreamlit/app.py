@@ -23,6 +23,11 @@ THRESHOLD_PER_100 = 16
 MIN_IMAGES_FOR_ALERT = 100
 MAX_GALLERY_ITEMS = 20
 
+# Accessing secrets
+host = st.secrets["SMTP_HOST"]
+port = st.secrets["SMTP_PORT"]
+user = st.secrets["SMTP_USER"]
+password = st.secrets["SMTP_PASSWORD"]
 
 def init_db() -> None:
     with sqlite3.connect(DB_PATH) as conn:
