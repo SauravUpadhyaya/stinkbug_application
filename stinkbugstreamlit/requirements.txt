@@ -1,0 +1,7 @@
+streamlit
+ultralytics
+pillow
+pandas
+numpy
+python-dotenv
+streamlit-autorefresh
